@@ -22,7 +22,7 @@ numpy==1.24.3
 ## How to Run train.py
 
 Open a terminal (or command prompt) and navigate to the directory where train.py is saved. Then run
-
+Mine is:
 python train.py --data_dir /path/to/Riped_and_Unriped_Tomato_Dataset \
                --img_size 128 \
                --batch_size 32 \
