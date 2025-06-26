@@ -20,11 +20,16 @@ numpy==1.24.3
 
 
 ## How to Run train.py
+## Make sure to pass the correct dataset path
 
-Open a terminal (or command prompt) and navigate to the directory where train.py is saved. Then run
-Mine is:
-python train.py --data_dir /path/to/Riped_and_Unriped_Tomato_Dataset \
-               --img_size 128 \
-               --batch_size 32 \
-               --epochs 30 \
-               --output_model best_model.h5
+Open a Google Colab and run the below code
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+from google.colab import files
+files.upload()
+
+!python train.py \
+    --data_dir "/content/drive/MyDrive/Riped and Unriped Tomato Dataset" \
+    --output_model "/content/drive/MyDrive/best_model.h5"
