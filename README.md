@@ -18,3 +18,11 @@ pillow==9.5.0
 matplotlib==3.7.1
 numpy==1.24.3
 
+
+## How to Run train.py
+
+python train.py --data_dir /path/to/Riped_and_Unriped_Tomato_Dataset \
+               --img_size 128 \
+               --batch_size 32 \
+               --epochs 30 \
+               --output_model best_model.h5
