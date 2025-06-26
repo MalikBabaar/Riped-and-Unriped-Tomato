@@ -20,16 +20,19 @@ numpy==1.24.3
 
 
 ## How to Run train.py
-## Make sure to pass the correct dataset path
 
-Open a Google Colab and run the below code
+## Run the Below Code in Google Colab
 
 from google.colab import drive
 drive.mount('/content/drive')
 
+## Run the Below Code and upload the train.py file
+
 from google.colab import files
 files.upload()
 
+## Make sure to pass the correct dataset path, My dataset is in Google Drive
+ 
 !python train.py \
     --data_dir "/content/drive/MyDrive/Riped and Unriped Tomato Dataset" \
     --output_model "/content/drive/MyDrive/best_model.h5"
